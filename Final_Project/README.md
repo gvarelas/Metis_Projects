@@ -1,5 +1,4 @@
 # Predicting Soccer Player Valuations
-***
 
 For my final project, I tried building a model capable of predicting the transfer market value of soccer players. I'm a huge soccer fan, so I wanted to see if I could apply data science and analytical tools to find the fair price of any given player given historical playing stats, salaries, contract lengths, injury history, and more.
 
@@ -18,12 +17,14 @@ I mostly used my domain knowledge as a soccer fan to selectively craft new featu
 
 ## Models
 
-| Model         | R<sup>2</sup> | 
+Before training my models, I did a train/test split in which all current player values were put into the test set, and all historicals were assigned to the training set. I then standard-scaled all values, and created a 5-fold cross validation set from the training set. The tabe below highlights some models I looked at, as well as their associated cross-validated scores. 
+
+| **Model**         | **R<sup>2</sup>** | 
 |:------------: |:-------------:|
 | OLS           | 61% |
-| LASSO         | 80%      |
-| Ridge         | 82%      |
+| LASSO         | 80% |
+| Ridge         | 82% |
 | ElasticNet    | 83% |
-| Random Forest | 77%      |
+| Random Forest | 77% |
 
 
