@@ -9,3 +9,9 @@ I scraped 3 websites to obtain the data for this project - [transfermarkt](https
 
 ## Feature Engineering
 
+The majority of my time on this project was dedicated to engineering features related to playing position and relevant playing stats. I mostly used my domain knowledge as a soccer fan to select which features to ....
+
+- **Position**: Check to see if a player's position has any impact on their price; my intuition suggested yes, as players who take on goalscoring roles (such as Strikers or Wingers) are generally more sought-after than defensive players
+- **Positional Interactions**: I also created interaction terms for the key statistics that I thought would be most relevant to each position. For example, a Striker's main role is to score goals (you wouldn't care how good Cristiano Ronaldo is at defending), so I made interaction terms for all goalscoring stats with the Striker dummy variables, and likewise for all other positions (Winger, Central Midfielder, Attacking Midfielder, Defensive Midfielder, Center-Back, Wing-Back). 
+- **Club Bargaining Power**: I created rankings of the bargaining power of every team in the dataset. I suspect that larger, wealthier teams would have more power in controlling their player's selling price, so I found rankings made by [Forbes](https://www.forbes.com/sites/forbespr/2018/06/12/forbes-releases-15th-annual-list-of-the-worlds-most-valuable-soccer-teams/) and created a feature that captured the hierarchy in club value as a possible way to capture the club's bargaining power. 
+- **Lagging Historical Features**: 
