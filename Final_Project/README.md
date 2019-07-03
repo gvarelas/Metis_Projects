@@ -24,7 +24,20 @@ Before training my models, I did a train/test split in which all current player 
 | OLS           | 61% |
 | LASSO         | 80% |
 | Ridge         | 82% |
-| ElasticNet    | 83% |
+| **ElasticNet**    | **83%** |
 | Random Forest | 77% |
+
+## Results
+
+Below are some of the most important features of the ElasticNet model:
+
+| **Most Positive Features**         | **Most Negative Features** | 
+|:------------: |:-------------:|
+| Lagged Values           | Age |
+| Lagged Wages         | Striker_Disposessions |
+| Goals/Game         | Games Missed (Injuries)|
+| Dribbles/Game    | Winger_Disposessions|
+
+I found it interesting that the model seemed to favor offensive statistics over defensive ones for predicting market values. The lack of defensive traits kind of makes sense, because it’s harder to measure how many goals a player prevented (since these events never actually happened) versus how many goals they directly contributed to. 
 
 
